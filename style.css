@@ -1,0 +1,91 @@
+/*
+ Theme Name:   TravelTour Child
+ Template:     travelTour
+*/
+
+.padding-top-90 {
+    padding-top: 90px;
+}
+
+.padding-top-30 {
+    padding-top: 30px;
+}
+
+.customImageCategory .gdlr-core-feature-box-item .gdlr-core-feature-box-content {
+    position: relative;
+}
+
+.customImageCategory .gdlr-core-feature-box-item .gdlr-core-feature-box-item-content p {
+    color: #fff;
+    padding: 0 10px 0;
+    margin: 0;
+}
+
+.customImageCategory .gdlr-core-feature-box-item .gdlr-core-feature-box-item-content h3 {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    width: 100%;
+    margin: 0 0 5px;
+    line-height: 1.2;
+}
+
+.customImageCategory .gdlr-core-feature-box-item .gdlr-core-feature-box-item-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 35px;
+    background: linear-gradient(transparent,rgba(73,70,64,.9));
+}
+
+.customImageCategory .gdlr-core-feature-box-item .gdlr-core-feature-box-item-image {
+    margin-bottom: 0;
+}
+
+.customImageCategory .gdlr-core-feature-box-item .gdlr-core-feature-box {
+    padding: 0;
+    background: transparent;
+}
+
+.customImageCategory .gdlr-core-feature-box-link:hover{
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.templateVideos img{
+    width: 100%;
+}
+
+.templateVideos .gdlr-core-feature-box-item .gdlr-core-feature-box-item-image {
+    margin-bottom: 0;
+}
+
+.templateVideos .gdlr-core-feature-box-item .gdlr-core-feature-box-item-content{
+    color: #333;
+    text-align: left;
+    padding-left: 10px;
+}
+.templateVideos .gdlr-core-feature-box-item .gdlr-core-feature-box {
+    padding: 0;
+    background: transparent;
+}
+
+.templateVideos .gdlr-core-feature-box-link:hover{
+    background: rgba(255, 255, 255, 0.35);
+}
+
+.templateVideos .gdlr-core-feature-box-item{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.templateVideos .gdlr-core-column-20 .gdlr-core-sync-height-content{
+    display: flex;
+}
+@media (min-width: 767px) {
+    .templateVideos .gdlr-core-column-20{
+        width: 37%;
+    }
+    .templateVideos .gdlr-core-column-40{
+        width: 63%;
+    }
+}
