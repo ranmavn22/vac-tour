@@ -23,7 +23,7 @@ function temoignages_init() {
 		'hierarchical'      => false,
 		'show_ui'           => true,
 		'show_in_nav_menus' => true,
-		'supports'          => array( 'title', 'editor','thumbnail' ),
+		'supports'          => array( 'title', 'editor','thumbnail', 'excerpt' ),
 		'has_archive'       => true,
 		'rewrite'           => array( 'slug' => 'temoignages' ,'with_front' => false ),
 		'query_var'         => true,
