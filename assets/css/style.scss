@@ -326,11 +326,12 @@
     }
   }
 }
+.single .fullInfor .gdlr-core-pbf-wrapper-container{
+  padding-left: 35px;
+  padding-right: 35px;
+}
 .fullInfor {
-  .gdlr-core-pbf-wrapper-container{
-    display: flex;
-    flex-wrap: wrap;
-  }
+
   .gdlr-core-text-box-item-content{
     h2{
       font-size: 22px;
@@ -340,14 +341,21 @@
     }
   }
   .toggetInforTour{
-    .gdlr-core-pbf-element:nth-child(odd){
+    padding-right: 30px;
+    .gdlr-core-pbf-element:nth-child(even){
       background: #f7f7f7;
+    }
+    .gdlr-core-pbf-element:first-child{
+      padding: 0;
+      .gdlr-core-text-box-item{
+        padding: 0;
+      }
     }
     .gdlr-core-pbf-element{
       padding: 0 65px;
       transition: 0.3s all;
       &.active{
-        .gdlr-core-text-box-item-content {
+        .itemTour.gdlr-core-text-box-item .gdlr-core-text-box-item-content {
           height: auto;
           h3{
             &:after{
@@ -357,49 +365,49 @@
         }
       }
     }
-    .gdlr-core-text-box-item{
+    .itemTour.gdlr-core-text-box-item{
       padding: 65px 0 40px 55px;
       border-left: 2px dashed #e7e7e7;
       position: relative;
-    }
-    .gdlr-core-text-box-item-content{
-      height: 110px;
-      overflow-y: hidden;
-      transition: 0.3s all;
-      h5{
-        position: absolute;
-        left: 0;
-        top: 75px;
-        height: 60px;
-        width: 60px;
-        text-align: center;
-        font-size: 16px;
-        display: table;
-        border: 2px solid #0e80bf;
-        background-color: #FFF;
-        text-transform: uppercase;
-        font-weight: bold;
-        transform: translate( -50%, -50%);
-        border-radius: 50%;
-        color: #0e80bf;
-        line-height: 56px;
-      }
-      h3{
-        color: #0e80bf;
-        font-size: 18px;
-        margin-bottom: 15px;
-        text-transform: uppercase;
-        position: relative;
-        padding-right: 20px;
-        border-bottom: 1px solid #0e80bf;
-        cursor: pointer;
-        &:after{
-          font: normal normal normal 14px/1 FontAwesome;
-          content: "\f055";
+      .gdlr-core-text-box-item-content{
+        height: 110px;
+        overflow-y: hidden;
+        transition: 0.3s all;
+        h5{
           position: absolute;
-          right: 0;
+          left: 0;
+          top: 75px;
+          height: 60px;
+          width: 60px;
+          text-align: center;
+          font-size: 16px;
+          display: table;
+          border: 2px solid #0e80bf;
+          background-color: #FFF;
+          text-transform: uppercase;
+          font-weight: bold;
+          transform: translate( -50%, -50%);
+          border-radius: 50%;
+          color: #0e80bf;
+          line-height: 56px;
+        }
+        h3{
+          color: #0e80bf;
           font-size: 18px;
+          margin-bottom: 15px;
+          text-transform: uppercase;
+          position: relative;
+          padding-right: 20px;
+          border-bottom: 1px solid #0e80bf;
+          cursor: pointer;
+          &:after{
+            font: normal normal normal 14px/1 FontAwesome;
+            content: "\f055";
+            position: absolute;
+            right: 0;
+            font-size: 18px;
 
+          }
         }
       }
     }
@@ -503,6 +511,9 @@
   }
   .templateVideos .gdlr-core-column-40{
     width: 63%;
+  }
+  .fullInfor .toggetInforTour .gdlr-core-pbf-element {
+    padding: 0 40px;
   }
 }
 
