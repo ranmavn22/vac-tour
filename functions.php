@@ -38,3 +38,28 @@ if (!function_exists('enquiryFormCallback')):
     add_shortcode('enquiry_form', 'enquiryFormCallback');
 endif;
 
+if (!function_exists('attachmentDownLoadFormCallback')):
+    function attachmentDownLoadFormCallback()
+    {
+        global $post;
+        $value = get_post_meta($post->ID,'infor_tour',true);
+        $html = '';
+        if($value){
+            $html .= "<div class='btnOpenContact'>";
+            $html .= '<a class="openContact" href="#" title="Télécharger le circuit">Télécharger le circuit</a>';
+            $html .= '</div>';
+            $html .= '<input type="hidden" class="tourAttachment" value="'.$value.'">';
+            $html .= "<div class='formModal'>";
+            $html .= "<div class='diaLog'>";
+            $html .= '<div class="headerModal"><p>Programme complet à télécharger</p><h3>'.$post->post_title.'</h3><i class="fa fa-times" aria-hidden="true"></i></div>';
+            $html .= '<div class="contentModal"><p>Pour recevoir maintenant ce programme au format PDF, veuillez saisir votre email adresse :';
+            $html .= do_shortcode('[contact-form-7 id="7981" title="Contact form footer"]');
+            $html .= '</div>';
+            $html .= '</div>';
+            $html .= '</div>';
+        }
+        return $html;
+    }
+    add_shortcode('attachment_downLoad', 'attachmentDownLoadFormCallback');
+endif;
+

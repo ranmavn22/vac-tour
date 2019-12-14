@@ -72,11 +72,14 @@
 .templateVideos .gdlr-core-feature-box-item{
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 9px;
 }
 .templateVideos .gdlr-core-column-20 .gdlr-core-sync-height-content{
   display: flex;
 }
+.templateVideos{
 
+}
 .content_pagination .current{
   font-size: 20px;
 }
@@ -305,6 +308,7 @@
     }
   }
   .gdlr-core-button-item{
+    padding-bottom: 0;
     .gdlr-core-button{
       font-size: 17px;
       text-transform: uppercase;
@@ -501,6 +505,105 @@
     a{
       color: #fff;
       font-size: 20px;
+    }
+  }
+}
+.btnOpenContact{
+  text-align: center;
+  a{
+    font-weight: bold;
+    line-height: 30px;
+  }
+}
+.formModal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.31);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s all;
+  &.show{
+    visibility: visible;
+    opacity: 1;
+  }
+  .diaLog{
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #f0f0f0;
+    border-radius: 5px;
+    .headerModal{
+      padding: 25px;
+      background: #e75925;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      position: relative;
+      .fa-times{
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        color: #fff;
+        font-size: 22px;
+      }
+      p{
+        margin-bottom: 5px;
+      }
+      h3{
+        font-size: 24px;
+        color: #fff;
+        text-align: left;
+        margin: 0;
+      }
+    }
+    .contentModal{
+      padding: 40px 25px;
+      p{
+        margin-bottom: 10px;
+        color: #444;
+      }
+      .attachments,br{
+        display: none !important;
+      }
+      .wpcf7-form > p{
+        display: flex;
+        position: relative;
+        align-items: flex-start;
+        .email{
+          margin-right: 20px;
+          width: 90%;
+        }
+        input{
+          padding: 6px 12px;
+          border-radius: 5px;
+          font-size: 16px;
+          line-height: 30px;
+          text-transform: inherit;
+        }
+        .wpcf7-submit{
+          width: 140px;
+          background: #e75925;
+        }
+        .ajax-loader{
+          position: absolute;
+          top:50%;
+          right: 0;
+        }
+        .wpcf7-not-valid-tip{
+          margin-bottom: 0;
+          color: #e75925;
+        }
+      }
+      .wpcf7-validation-errors{
+        border: 2px solid #e75925;
+      }
     }
   }
 }
